@@ -110,23 +110,38 @@ a:hover {
 }
 
 .logo {
-  font-family: var(--font-display);
-  font-size: 1.3rem;
-  line-height: 1.1;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
   text-decoration: none;
   color: var(--ink-strong);
-  font-weight: 900;
 }
 
-.logo span {
-  display: block;
-  margin-top: 0.2rem;
+.logo-icon {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  color: var(--teal);
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.logo-text em {
+  font-style: normal;
   font-family: var(--font-body);
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  font-size: 0.71rem;
+  font-size: 0.68rem;
   font-weight: 700;
   color: var(--ink-soft);
+  margin-top: 0.15rem;
 }
 
 .menu-toggle {
